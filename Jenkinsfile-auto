@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'docker build -t nodejs-random-color:ver-${BUILD_ID} .'
+                sh 'docker build -t nodejs-random-color:latest .'
             }
         }
         stage('Upload image to ECR') {
